@@ -10,11 +10,11 @@
       <p><u>Resultado</u></p>
       
       <div v-if="texto.length">
-        <p> {{ cuentaCaracteres }}</p>
+        <p>cantidad: { texto | cuentaCaracteres }</p>  <!--  NO FUNCIONA  -->
         <p>1 - {{ texto | Codificado}} (codificado)</p>
         <p>2 - {{ texto | Mayuscula }} (mayuscula)</p>
         <p>3 - {{ texto | Minuscula }} (minuscula)</p>
-        <!-- <p>4 - {{ texto | Intercalado1 }} (intercalado1)</p> -->
+        <p>4 - {{ texto | Intercalado }} (intercalado)</p>
         <!-- <p>4 - {{ texto }} </p>
         <p> cantidad caracteres: {{ cuentaCaracteres }}</p> -->
       </div>
@@ -26,9 +26,7 @@
       <p>Respuestas: 1:C 2:B 3:C 4:A 5:B .... </p>
      
 
-      <!-- <hr>
-      <p><u>formState</u></p>
-      <pre>{{ tamanioString }}</pre> -->
+     
 
   </section>
  

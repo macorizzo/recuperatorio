@@ -17,13 +17,13 @@ Vue.filter("Codificado", function (value) {
     return nuevoTexto;
 }); 
 
-Vue.filter("Intercalado1", function (value) {
+Vue.filter("Intercalado", function (value) {
     let cadena = value;
-        cadena.array.forEach(element => {
-            if (element.index() % 2 == 0) {
-                element.toLowerCase();
-            }
-        });
+    cadena.array.forEach(element => {
+        if (element.index() % 2 != 0) {
+            element.toLowerCase();
+        } 
+    });
 
     
     return cadena;
