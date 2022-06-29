@@ -11,7 +11,7 @@
       
       <div v-if="texto.length">
         <p>cantidad: { texto | cuentaCaracteres }</p>  <!--  NO FUNCIONA  -->
-        <p>1 - {{ texto | Codificado}} (codificado)</p>
+        <!-- <p>1 - {{ texto | Codificado}} (codificado)</p> -->
         <p>2 - {{ texto | Mayuscula }} (mayuscula)</p>
         <p>3 - {{ texto | Minuscula }} (minuscula)</p>
         <p>4 - {{ texto | Intercalado }} (intercalado)</p>
